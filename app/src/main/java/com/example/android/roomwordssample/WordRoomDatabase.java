@@ -74,7 +74,7 @@ abstract class WordRoomDatabase extends RoomDatabase {
     private static RoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback() {
         @Override
         public void onCreate(@NonNull SupportSQLiteDatabase db) {
-            Log.i("xiaoyu db ", " onCreate "  + " dbVersion " + db.getVersion() + "enableWriteAheadLogging " + db.enableWriteAheadLogging());
+            Log.i("xiaoyu db ", " onCreate "  + " dbVersion " + db.getVersion() + "  enableWriteAheadLogging " + db.enableWriteAheadLogging());
 
             super.onCreate(db);
 
@@ -93,7 +93,7 @@ abstract class WordRoomDatabase extends RoomDatabase {
 
         @Override
         public void onOpen(@NonNull SupportSQLiteDatabase db) {
-            Log.i("xiaoyu db ", " onOpen "  + " dbVersion " + db.getVersion() + "enableWriteAheadLogging " + db.enableWriteAheadLogging());
+            Log.i("xiaoyu db ", " onOpen "  + " dbVersion " + db.getVersion() + "  enableWriteAheadLogging " + db.enableWriteAheadLogging());
             super.onOpen(db);
 
         }
